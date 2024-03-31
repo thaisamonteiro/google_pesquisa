@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #202124;
+    overflow-x: hidden;
+}
+
+#cabeca {
+    width: 100%;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ffffff34;
+}
+
+.cont {
+    display:flex;
+    flex-direction: row;
+    width: 97%;
+    height: 92%;
+}
+
+/* logo do google */
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    height:auto;
+    padding-top: 23px;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;;
+    color: #ffffff;
+    padding-right: 3%;
+}
+
+/* container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width:52%;
+    height: auto;
+}
+
+.pesquisa {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: #303134;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;    
+}
+
+.abaixo-pesquisa {
+    display: flex;
+    flex:1;
+    flex-direction: row;
+}
+
+.abaixo-pesquisa ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0px;
+    padding-bottom: 0px;
+}
+
+.abaixo-pesquisa ul li a {
+    display:flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+
+.abaixo-pesquisa ul li {
+    list-style: none;
+    width: auto;
+    padding-left:0px ;
+    padding-right:0px ;
+    margin:10px 7px 0px 7px;
+    padding:4px;
+}
+
+.abaixo-pesquisa ul li:hover {
+    border-bottom: 3px solid #8AB4F8;
+    
+}
+
+.abaixo-pesquisa ul li a p {
+    font-size:14px;
+    color: #94969c;
+}
+
+.abaixo-pesquisa ul li:hover a p {
+    color:#8AB4F8;
+}
+
+.pesquisa a img {
+    width: 13px;
+    margin: 10px;
+}
+
+.abaixo-pesquisa > ul > .mais > a > img {
+    width: 5px;
+}
+
+.abaixo-pesquisa > ul > li > a > img {
+    width: 13px;
+}
+
+.abaixo-pesquisa > ul > li > a > img , p {
+    margin-left: 5px;
+}
+
+.ferramenta {
+    margin-left:74px;
+}
+
+.conta-google {
+    display: flex;
+    width: 40%; 
+    justify-content: flex-end;   
+}
+
+.conta-google > ul > li {
+    list-style: none;
+}
+
+.conta-google > ul > li > abbr > a > img {
+    width: 20px;
+    margin:12px;
+}
+
+.conta-google > ul > .foto-minha > abbr > a > img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.conta-google > ul {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 7px;    
+}
+
+/* configurar o input da area pesquisa */
+
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    padding:15px;     
+}
+
+label {
+    width: 100%;
+    height: 100%;
+    border-right:1px solid #686a6d;     
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background-color:#303134;
+    border:none;
+    outline:none;
+    color:#e4e0e0;
+    font-size:18px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+/* corpo */
+
+#corpo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    /* background-color: chocolate; */
+}
+
+.corpo {
+    width: 80%;
+    margin-bottom:30px;
+    /* background-color: chartreuse; */
+    position: relative;
+    right:-3.5%;
+}
+
+.corpo > div {
+    width:55%;  
+    /* background-color: darkred;  */
+}
+
+.primeira-linha {
+    font-size:14px;
+    color: #94969c;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+/* configurando a primeira div do conteudo */
+
+.anuncio {
+    margin-bottom: 9px;
+    margin-left: 0px;
+    color:#bdbdc0;
+    font-size:14px;
+    margin-top: 23px;
+}
+
+.titulo {
+    text-decoration: none;
+    font-size: 20px;
+    color:#8AB4F8;
+    
+}
+
+.conteudo {
+    margin-left: 0px;
+    margin-top:7px;
+    color:#bdbdc0;
+    font-size:14px;
+    line-height: 22px;
+}
+
+.sobre-nos {
+    text-decoration: none;
+    font-size: 14px;
+    color:#8AB4F8;
+}
+
+.wiki {
+    margin-bottom: 9px;
+    margin-left: 0px;
+    color:#bdbdc0;
+    font-size:14px;
+    margin-top: 10px;
+}
+
+.wikip {
+    margin-left: 0px;
+    margin-top:0px;
+    margin-bottom:30px;
+    color:#bdbdc0;
+    font-size:16px;
+    line-height: 22px;
+    text-align:justify ;
+}
+
+.corpo > .caixa {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    /* background-color: darkslategrey; */
+    margin-top: 30px;
+    
+}
+
+.corpo > .caixa-1 {
+    border-bottom: 1px solid #686a6d;
+}
+
+.caixa > .ca-1 {
+    width:55%;
+    /* background-color: crimson; */
+    padding-bottom:30px;
+}
+
+.caixa > img {
+    margin-left:15px;
+    width:480px;
+    height: 160px;
+}
+
+.caixa > .ca-2 {
+    width: 60%;
+    
+}
+
+.desc-caixa {
+    margin-left: 0px;
+    margin-top:7px;
+    color:#bdbdc0;
+    font-size:16px;
+    line-height: 22px;
+}
+
+.ca-2 > h1 {
+    
+    font-size: 22px;
+    color:#e5e5e6;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.ca-2 > a {
+    text-decoration: none;
+}
+
+.ca-2 > a > p {
+    display: flex;
+    border-top: 1px solid #686a6d5e;
+    border-bottom: 1px solid #686a6d5e;
+    color: #babcc2;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 0px;
+    padding-left: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ca-2 > a > p > img {
+    height: 7px;
+}
+
+.caixa > .ca-3 {
+    margin-left: 50px;
+    width: 350px;
+    border: 1px solid #686a6d5e;
+    border-radius: 10px;
+}
+
+.ca-3 > h1 {
+    color:#efeff1;
+    padding: 17px;
+    font-size: 25px;
+    border-bottom: 1px solid #686a6d5e;
+    
+}
+
+.ca-3 > p {
+    color:#adadad;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px;
+    border-bottom: 1px solid #686a6d5e;
+    line-height: 21px;
+    margin-left: 0px;
+}
+
+.ca-3 > a > p {
+    height: 10px;
+    color:#e5e5e6;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px;
+    border-top: 1px solid #686a6d5e; 
+}
+
